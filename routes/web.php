@@ -27,7 +27,11 @@ Route::get('/hallo', function(){
 });
 
 Route::get('/greet/{name}', function($name){
-    return 'Hello ' .  $name . '!';
+    return 'Hi there ' .  $name . '!';
+});
+
+Route::fallback(function(){
+    return 'OOPS... Wrong turn. The page you are looking for does not exist';
 });
 
 
