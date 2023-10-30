@@ -31,7 +31,7 @@ Route::get('/greet/{name}', function($name){
 });
 
 Route::fallback(function(){
-    return 'OOPS... Wrong turn. The page you are looking for does not exist';
+    return 'OOPS... Wrong turn. The page you are looking for does not exist. Go back to where you should be.';
 });
 
 
